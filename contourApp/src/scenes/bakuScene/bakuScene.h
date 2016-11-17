@@ -11,13 +11,15 @@ public:
     void setup();
     void update();
     void draw();
+	void resize(int w, int h);
 	
 	
 private:
 	
 	int width, height;
 	
-	ofShader shader;
+	ofShader displaceShader;
 	ofxSwapBuffer pingPong;
+
 	
 };

@@ -5,7 +5,7 @@
 //---------------------------------------------------------------
 void bakuScene::setup(){
 	
-	shader.load("baku/feedback.vert", "baku/feedback.frag");
+	displaceShader.load("baku/displace");
 	
 	pingPong.allocate(ofGetWidth(), ofGetHeight(), GL_RGB);
 	
@@ -50,14 +50,14 @@ void bakuScene::update(){
 		// displace
 		pingPong.dst->begin();
 		{
-			shader.begin();
-			shader.setUniform1f("time", ofGetElapsedTimef());
-			shader.setUniform2f("resolution", ofGetWidth(), ofGetHeight());
-			shader.setUniformTexture("prevTex", pingPong.src->getTexture(), 0);
+			displaceShader.begin();
+			displaceShader.setUniform1f("time", ofGetElapsedTimef());
+			displaceShader.setUniform2f("resolution", ofGetWidth(), ofGetHeight());
+			displaceShader.setUniformTexture("prevTex", pingPong.src->getTexture(), 0);
 			
 			ofDrawRectangle(0, 0, ofGetWidth(), ofGetHeight());
 			
-			shader.end();
+			displaceShader.end();
 		}
 		pingPong.dst->end();
 	}
@@ -70,10 +70,13 @@ void bakuScene::draw(){
 	
 	ofClear(0);
 	ofSetColor(255);
-
-	
-	
 	pingPong.dst->draw(0, 0);
 	
 	ofPopStyle();
+}
+
+//---------------------------------------------------------------
+void bakuScene::resize(int w, int h) {
+	pingPong.src->allocate(w, h);
+	pingPong.dst->allocate(w, h);
 }
