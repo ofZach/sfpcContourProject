@@ -5,8 +5,7 @@
 #include "contourTracker.h"
 #include "sceneManager.h"
 #include "baseScene.h"
-
-
+#include "inputManager.h"
 
 class ofApp : public ofBaseApp{
 
@@ -28,10 +27,11 @@ class ofApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
 		
     
-        ofVideoPlayer           player;
-        ofxCv::ContourFinder    finder;
+        inputManager            IM;
         contourTracker          CT;
         sceneManager            SM;
+    
+    bool bDrawDebug;
     
     
 };

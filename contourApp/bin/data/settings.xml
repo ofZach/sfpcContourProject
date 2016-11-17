@@ -1,0 +1,8 @@
+<group>
+	<settings>
+		<threshold>148</threshold>
+		<speed>1</speed>
+		<medianFilterAmount>3</medianFilterAmount>
+	</settings>
+<group/>
+</group>

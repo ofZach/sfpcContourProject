@@ -9,12 +9,15 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
 
-    player.load("input.mov");
-    player.play();
     
+    IM.setup();
+        
+   
+
     
-    SM.scenes.push_back(new velocityScene());
     SM.scenes.push_back(new offsetScene());
+    SM.scenes.push_back(new velocityScene());
+    
     SM.scenes.push_back(new geometryScene());
     SM.scenes.push_back(new trailsScene());
     SM.scenes.push_back(new emptyScene());
@@ -26,21 +29,21 @@ void ofApp::setup(){
     
     SM.setup();
     
+    
+    bDrawDebug = false;
+    
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    player.update();
-
     
-    finder.setThreshold(127);
-    finder.findContours(player);
+    IM.update();
     
-    if (finder.size() > 0){
-        
-        ofPolyline tempLine = finder.getPolyline(0);
+    if (IM.finder.size() > 0){
+     
+        ofPolyline tempLine = IM.finder.getPolyline(0);
         for (int i = 0; i < tempLine.size(); i++){
-            tempLine[i] *= 3;
+            tempLine[i] *= 2;
         }
         CT.analyze(tempLine);
     }
@@ -54,9 +57,15 @@ void ofApp::draw(){
 
     ofBackground(0,0,0);
     
+    
+    if (bDrawDebug){
+        IM.draw();
+    }else {
+        SM.draw();
+        
+    }
 
     
-    SM.draw();
     
     
 }
@@ -66,6 +75,10 @@ void ofApp::keyPressed(int key){
 
     if (key == OF_KEY_RIGHT){
         SM.nextScene();
+    }
+    
+    if (key == ' '){
+        bDrawDebug = !bDrawDebug;
     }
 }
 
