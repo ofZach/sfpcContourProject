@@ -4,6 +4,7 @@
 #include "geometryScene.h"
 #include "offsetScene.h"
 #include "velocityScene.h"
+#include "bakuScene.h"
 
 
 //--------------------------------------------------------------
@@ -12,7 +13,8 @@ void ofApp::setup(){
     player.load("input.mov");
     player.play();
     
-    
+	
+	SM.scenes.push_back(new bakuScene());
     SM.scenes.push_back(new velocityScene());
     SM.scenes.push_back(new offsetScene());
     SM.scenes.push_back(new geometryScene());
