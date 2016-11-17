@@ -24,7 +24,12 @@ void sceneManager::nextScene(){
     currentScene %= scenes.size();
 }
 
-
+void sceneManager::prevScene(){
+	currentScene--;
+	if (currentScene < 0) {
+		currentScene += scenes.size();
+	}
+}
 
 //---------------------------------------------------------------
 void sceneManager::update(){

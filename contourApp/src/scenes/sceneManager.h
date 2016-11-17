@@ -12,6 +12,7 @@ public:
     void update();
     void draw();
     void nextScene();
+	void prevScene();
     
     
     
