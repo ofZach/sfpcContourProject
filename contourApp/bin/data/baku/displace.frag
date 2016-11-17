@@ -86,11 +86,11 @@ void main() {
 
 	vec2 offset;
 
-	offset += mix(vec2(-1.), vec2(+1.), snoise2(uv)) * 4.;
+	offset += mix(vec2(-1.), vec2(+1.), snoise2(uv)) * 2. + vec2(0., 6.);
 
 	vec3 color = texture(prevTex, gl_FragCoord.xy + offset).rgb;
 
-	color -= vec3(0.01);
+	color -= vec3(0.468,0.835,0.261) * 0.02;
   
   outputColor = vec4(color, 1.);
 }

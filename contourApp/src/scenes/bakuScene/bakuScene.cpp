@@ -29,6 +29,9 @@ void bakuScene::update(){
 	ofPolyline& contour = CT->resampleSmoothed;
 	contour = contour.getSmoothed(1);
 	
+	ofEnableAntiAliasing();
+	
+	
     if (CT->resampleSmoothed.size() == 100){
 		
 		pingPong.swap();
@@ -37,13 +40,11 @@ void bakuScene::update(){
 		pingPong.src->begin();
 		{
 			
-			ofSetColor(255);
+			ofSetColor(230, 232, 155);
 			
-//			for (auto& pt : contour.getVertices()) {
-//				ofDrawCircle(pt, 3);
-//			}
-			
-			contour.draw();
+			for (auto& pt : contour.getVertices()) {
+				ofDrawCircle(pt, 6);
+			}
 		}
 		pingPong.src->end();
 		
@@ -61,6 +62,8 @@ void bakuScene::update(){
 		}
 		pingPong.dst->end();
 	}
+	
+	ofDisableAntiAliasing();
 }
 
 //---------------------------------------------------------------
