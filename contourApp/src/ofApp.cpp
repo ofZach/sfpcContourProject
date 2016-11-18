@@ -4,17 +4,28 @@
 #include "geometryScene.h"
 #include "offsetScene.h"
 #include "velocityScene.h"
-
+#include "medhirScene.h"
+#include "katrinaScene.h"
+#include "bodybitsScene.h"
+#include "molmolScene.h"
+#include "retrocolorScene.h"
+#include "adnanScene.h"
+#include "bakuScene.h"
 
 //--------------------------------------------------------------
 void ofApp::setup(){
 
     
     IM.setup();
-        
-   
-
     
+    SM.scenes.push_back(new bakuScene());
+
+    SM.scenes.push_back(new adnanScene());
+   SM.scenes.push_back(new retrocolorScene());
+    SM.scenes.push_back(new molmolScene());
+    SM.scenes.push_back(new katrinaScene());
+    SM.scenes.push_back(new bodybitsScene());
+    SM.scenes.push_back(new medhirScene());
     SM.scenes.push_back(new offsetScene());
     SM.scenes.push_back(new velocityScene());
     
@@ -39,11 +50,27 @@ void ofApp::update(){
     
     IM.update();
     
+    
+    ofRectangle input(0,0,IM.medianFilteredResult.getWidth(), IM.medianFilteredResult.getHeight());
+    ofRectangle output(0,0, ofGetWidth(), ofGetHeight());
+    
+    ofRectangle inputScaled = input;
+    inputScaled.scaleTo(output);
+    
+    
+    
     if (IM.finder.size() > 0){
      
         ofPolyline tempLine = IM.finder.getPolyline(0);
-        for (int i = 0; i < tempLine.size(); i++){
-            tempLine[i] *= 2;
+        for (int i = 0; i < tempLine.size(); i++){ 
+            float x = tempLine[i].x;
+            float y = tempLine[i].y;
+            float newX = ofMap(x, input.x, input.x + input.width,
+                               inputScaled.x + inputScaled.width, inputScaled.x);
+            float newY = ofMap(y, input.y, input.y + input.height,
+                               inputScaled.y, inputScaled.y + inputScaled.height);
+            tempLine[i].set(newX, newY);
+            
         }
         CT.analyze(tempLine);
     }
@@ -79,6 +106,10 @@ void ofApp::keyPressed(int key){
     
     if (key == ' '){
         bDrawDebug = !bDrawDebug;
+    }
+    
+    if (key == 'f'){
+        ofToggleFullscreen();
     }
 }
 

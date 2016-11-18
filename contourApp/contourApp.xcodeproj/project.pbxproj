@@ -47,6 +47,13 @@
 		926B2EA61DDE4D9900CDB181 /* contourTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 926B2E9F1DDE4D9900CDB181 /* contourTracker.cpp */; };
 		926B2EA81DDE4D9900CDB181 /* inputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 926B2EA41DDE4D9900CDB181 /* inputManager.cpp */; };
 		926B2EAB1DDE4DBA00CDB181 /* ctmf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 926B2EA91DDE4DBA00CDB181 /* ctmf.cpp */; };
+		926B2EB01DDE5E4B00CDB181 /* medhirScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 926B2EAE1DDE5E4B00CDB181 /* medhirScene.cpp */; };
+		926B2EB71DDE5FE300CDB181 /* bodybitsScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 926B2EB21DDE5FE300CDB181 /* bodybitsScene.cpp */; };
+		926B2EB81DDE5FE300CDB181 /* katrinaScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 926B2EB51DDE5FE300CDB181 /* katrinaScene.cpp */; };
+		926B2EBC1DDE611800CDB181 /* molmolScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 926B2EBA1DDE611800CDB181 /* molmolScene.cpp */; };
+		926B2EC01DDE643E00CDB181 /* retrocolorScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 926B2EBE1DDE643E00CDB181 /* retrocolorScene.cpp */; };
+		926B2EC41DDE653000CDB181 /* adnanScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 926B2EC21DDE653000CDB181 /* adnanScene.cpp */; };
+		926B2EC91DDE664000CDB181 /* bakuScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 926B2EC61DDE664000CDB181 /* bakuScene.cpp */; };
 		9B4A08D190727CB8520F18D7 /* velocityScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3A7516CD1342593649B2779 /* velocityScene.cpp */; };
 		A0C015CC66A25C7CEDF8B659 /* emptyScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78481FC03BBAF87DB496E802 /* emptyScene.cpp */; };
 		A210FFA89BA74B05AEF1966D /* transfer_pool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 82FC411ECB0357AD72594FE8 /* transfer_pool.cpp */; };
@@ -270,6 +277,21 @@
 		926B2EA51DDE4D9900CDB181 /* inputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inputManager.h; sourceTree = "<group>"; };
 		926B2EA91DDE4DBA00CDB181 /* ctmf.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ctmf.cpp; sourceTree = "<group>"; };
 		926B2EAA1DDE4DBA00CDB181 /* ctmf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ctmf.h; sourceTree = "<group>"; };
+		926B2EAE1DDE5E4B00CDB181 /* medhirScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = medhirScene.cpp; sourceTree = "<group>"; };
+		926B2EAF1DDE5E4B00CDB181 /* medhirScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = medhirScene.h; sourceTree = "<group>"; };
+		926B2EB21DDE5FE300CDB181 /* bodybitsScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bodybitsScene.cpp; sourceTree = "<group>"; };
+		926B2EB31DDE5FE300CDB181 /* bodybitsScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bodybitsScene.h; sourceTree = "<group>"; };
+		926B2EB51DDE5FE300CDB181 /* katrinaScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = katrinaScene.cpp; sourceTree = "<group>"; };
+		926B2EB61DDE5FE300CDB181 /* katrinaScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = katrinaScene.h; sourceTree = "<group>"; };
+		926B2EBA1DDE611800CDB181 /* molmolScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = molmolScene.cpp; sourceTree = "<group>"; };
+		926B2EBB1DDE611800CDB181 /* molmolScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = molmolScene.h; sourceTree = "<group>"; };
+		926B2EBE1DDE643E00CDB181 /* retrocolorScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = retrocolorScene.cpp; sourceTree = "<group>"; };
+		926B2EBF1DDE643E00CDB181 /* retrocolorScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = retrocolorScene.h; sourceTree = "<group>"; };
+		926B2EC21DDE653000CDB181 /* adnanScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = adnanScene.cpp; sourceTree = "<group>"; };
+		926B2EC31DDE653000CDB181 /* adnanScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = adnanScene.h; sourceTree = "<group>"; };
+		926B2EC61DDE664000CDB181 /* bakuScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bakuScene.cpp; sourceTree = "<group>"; };
+		926B2EC71DDE664000CDB181 /* bakuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bakuScene.h; sourceTree = "<group>"; };
+		926B2EC81DDE664000CDB181 /* ofxSwapBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSwapBuffer.h; sourceTree = "<group>"; };
 		946187321200AC04E570E6EC /* hierarchical_clustering_index.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = hierarchical_clustering_index.h; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/hierarchical_clustering_index.h; sourceTree = SOURCE_ROOT; };
 		9604B925D32EE39065747725 /* ofxBaseGui.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxBaseGui.cpp; path = ../../../addons/ofxGui/src/ofxBaseGui.cpp; sourceTree = SOURCE_ROOT; };
 		960BD311ABBA7D3299D7FE1F /* datamov_utils.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = datamov_utils.hpp; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/datamov_utils.hpp; sourceTree = SOURCE_ROOT; };
@@ -634,6 +656,13 @@
 		36BF1C038F5AEC4D85473FE4 /* scenes */ = {
 			isa = PBXGroup;
 			children = (
+				926B2EC51DDE664000CDB181 /* bakuScene */,
+				926B2EC11DDE653000CDB181 /* adnanScene */,
+				926B2EBD1DDE643E00CDB181 /* retrocolorScene */,
+				926B2EB91DDE611800CDB181 /* molmolScene */,
+				926B2EB11DDE5FE300CDB181 /* bodybitsScene */,
+				926B2EB41DDE5FE300CDB181 /* katrinaScene */,
+				926B2EAD1DDE5E4B00CDB181 /* medhirScene */,
 				10E77EFB672AD13F3F3639CB /* baseScene.cpp */,
 				3123FC43CDB08480B2226A91 /* baseScene.h */,
 				C1868819252A931A515C8E7D /* emptyScene */,
@@ -965,6 +994,77 @@
 				926B2EA51DDE4D9900CDB181 /* inputManager.h */,
 			);
 			path = input;
+			sourceTree = "<group>";
+		};
+		926B2EAD1DDE5E4B00CDB181 /* medhirScene */ = {
+			isa = PBXGroup;
+			children = (
+				926B2EAE1DDE5E4B00CDB181 /* medhirScene.cpp */,
+				926B2EAF1DDE5E4B00CDB181 /* medhirScene.h */,
+			);
+			name = medhirScene;
+			path = scenes/medhirScene;
+			sourceTree = "<group>";
+		};
+		926B2EB11DDE5FE300CDB181 /* bodybitsScene */ = {
+			isa = PBXGroup;
+			children = (
+				926B2EB21DDE5FE300CDB181 /* bodybitsScene.cpp */,
+				926B2EB31DDE5FE300CDB181 /* bodybitsScene.h */,
+			);
+			name = bodybitsScene;
+			path = scenes/bodybitsScene;
+			sourceTree = "<group>";
+		};
+		926B2EB41DDE5FE300CDB181 /* katrinaScene */ = {
+			isa = PBXGroup;
+			children = (
+				926B2EB51DDE5FE300CDB181 /* katrinaScene.cpp */,
+				926B2EB61DDE5FE300CDB181 /* katrinaScene.h */,
+			);
+			name = katrinaScene;
+			path = scenes/katrinaScene;
+			sourceTree = "<group>";
+		};
+		926B2EB91DDE611800CDB181 /* molmolScene */ = {
+			isa = PBXGroup;
+			children = (
+				926B2EBA1DDE611800CDB181 /* molmolScene.cpp */,
+				926B2EBB1DDE611800CDB181 /* molmolScene.h */,
+			);
+			name = molmolScene;
+			path = scenes/molmolScene;
+			sourceTree = "<group>";
+		};
+		926B2EBD1DDE643E00CDB181 /* retrocolorScene */ = {
+			isa = PBXGroup;
+			children = (
+				926B2EBE1DDE643E00CDB181 /* retrocolorScene.cpp */,
+				926B2EBF1DDE643E00CDB181 /* retrocolorScene.h */,
+			);
+			name = retrocolorScene;
+			path = scenes/retrocolorScene;
+			sourceTree = "<group>";
+		};
+		926B2EC11DDE653000CDB181 /* adnanScene */ = {
+			isa = PBXGroup;
+			children = (
+				926B2EC21DDE653000CDB181 /* adnanScene.cpp */,
+				926B2EC31DDE653000CDB181 /* adnanScene.h */,
+			);
+			name = adnanScene;
+			path = scenes/adnanScene;
+			sourceTree = "<group>";
+		};
+		926B2EC51DDE664000CDB181 /* bakuScene */ = {
+			isa = PBXGroup;
+			children = (
+				926B2EC61DDE664000CDB181 /* bakuScene.cpp */,
+				926B2EC71DDE664000CDB181 /* bakuScene.h */,
+				926B2EC81DDE664000CDB181 /* ofxSwapBuffer.h */,
+			);
+			name = bakuScene;
+			path = scenes/bakuScene;
 			sourceTree = "<group>";
 		};
 		961A625BD21068033782887C /* legacy */ = {
@@ -1435,11 +1535,14 @@
 				483908258D00B98B4BE69F07 /* ofxLabel.cpp in Sources */,
 				F285EB3169F1566CA3D93C20 /* ofxPanel.cpp in Sources */,
 				837220E80EB56CD44AD27F2A /* ofxSlider.cpp in Sources */,
+				926B2EB71DDE5FE300CDB181 /* bodybitsScene.cpp in Sources */,
 				B56FE57CC35806596D38118C /* ofxSliderGroup.cpp in Sources */,
 				1CD33E884D9E3358252E82A1 /* ofxToggle.cpp in Sources */,
+				926B2EC91DDE664000CDB181 /* bakuScene.cpp in Sources */,
 				250A95BA26587BE85DB0A353 /* ofxCvColorImage.cpp in Sources */,
 				1D5F3298C2FA073628012944 /* ofxCvContourFinder.cpp in Sources */,
 				169D3C72FDE6C5590A1616F5 /* ofxCvFloatImage.cpp in Sources */,
+				926B2EB01DDE5E4B00CDB181 /* medhirScene.cpp in Sources */,
 				FB09C6B2A1DA0EA217240CB8 /* ofxCvGrayscaleImage.cpp in Sources */,
 				E212C821D1064B92DD953A42 /* ofxCvHaarFinder.cpp in Sources */,
 				63020F16C7E8DED980111241 /* ofxCvImage.cpp in Sources */,
@@ -1452,6 +1555,7 @@
 				AC8028967B2320B6E2FDED6A /* Flow.cpp in Sources */,
 				2298339EAADA0033CD7DC095 /* Helpers.cpp in Sources */,
 				35FE1C5DC922D64208E47186 /* Kalman.cpp in Sources */,
+				926B2EB81DDE5FE300CDB181 /* katrinaScene.cpp in Sources */,
 				926B2EAB1DDE4DBA00CDB181 /* ctmf.cpp in Sources */,
 				EC56083529C86C707EB4971A /* ObjectFinder.cpp in Sources */,
 				926B2EA61DDE4D9900CDB181 /* contourTracker.cpp in Sources */,
@@ -1467,6 +1571,7 @@
 				8FB9B9E8DED3F836A49D3929 /* double_buffer.cpp in Sources */,
 				6AB07B96E23E1CC5336C8360 /* event_loop.cpp in Sources */,
 				030FE2AC1BA632242FE1AAD8 /* flextGL.cpp in Sources */,
+				926B2EC41DDE653000CDB181 /* adnanScene.cpp in Sources */,
 				5A70712F9E6F801E0DE5E660 /* frame_listener_impl.cpp in Sources */,
 				F4742A8ED80B23AF823677D3 /* libfreenect2.cpp in Sources */,
 				AF08859DD9C54C459508A038 /* logging.cpp in Sources */,
@@ -1480,6 +1585,8 @@
 				A210FFA89BA74B05AEF1966D /* transfer_pool.cpp in Sources */,
 				3C875D4FF01530E122098DCF /* usb_control.cpp in Sources */,
 				496F3BC7EBDF73AA2A4ABC1A /* ofProtonect.cpp in Sources */,
+				926B2EBC1DDE611800CDB181 /* molmolScene.cpp in Sources */,
+				926B2EC01DDE643E00CDB181 /* retrocolorScene.cpp in Sources */,
 				1B3CED756A8B95D19A790B99 /* ofRGBPacketProcessor.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
